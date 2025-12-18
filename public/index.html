@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: Arial, sans-serif;
+      background: #000000;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    /* SOL ÜST LOGO */
+    .logo-fixed {
+      position: fixed;
+      top: 24px;
+      left: 24px;
+      width: 180px;        /* BÜYÜK */
+      z-index: 100;
+      animation: float 3s ease-in-out infinite;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,.4));
+      user-select: none;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .box {
+      padding: 30px 40px;
+      border: 1px solid #444;
+      border-radius: 12px;
+      background: #111827;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SOL ÜST LOGO -->
+  <img src="test.png" alt="Logo" class="logo-fixed">
+
+  <div class="box">
+    <h1>Welcome 👋</h1>
+    <p>You need to access this page for the secret.</p>
+    <p>Write-up date: 01/01/2026</p>
+
+    <!-- Hint : /admin -->
+  </div>
+
+</body>
+</html>
